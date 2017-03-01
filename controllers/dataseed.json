@@ -1,0 +1,27 @@
+[
+           {
+               "username":"admin",
+                "todo":"Buy milk",
+                "isDone":false,
+                "hasAttachment":false
+             },
+               {
+                "username":"admin",
+                "todo":"Feed Dog",
+                "isDone":false,
+                "hasAttachment":false
+             }
+             ,
+               {
+                "username":"admin",
+                "todo":"Buy newspaper",
+                "isDone":false,
+                "hasAttachment":false
+             },
+               {
+                "username":"admin",
+                "todo":"Cook meal",
+                "isDone":false,
+                "hasAttachment":false
+             }
+        ]

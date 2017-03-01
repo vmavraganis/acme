@@ -1,0 +1,14 @@
+var express=require('express');
+var app=express();
+var mongoose=require('mongoose');
+var port=process.env.port||3000;
+var config=require('./config');
+var setupController=require('./controllers/setupController');
+var apicontroller=require('./controllers/apiController');
+app.use('/',express.static(__dirname+"/public"));
+app.set('view engine','ejs');
+app.listen(port);
+setupController(app);
+apicontroller(app);
+console.log("app is running on "+port);
+mongoose.connect(config.getDbConnectionString());
